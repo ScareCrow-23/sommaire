@@ -1,9 +1,22 @@
+import BgGradient from "@/components/common/bg-gradient";
+import CTASection from "@/components/hero/cta-section";
+import DemoSection from "@/components/hero/demo-section";
+import HeroSection from "@/components/hero/hero-section";
+import HowItWorksSection from "@/components/hero/how-it-works-section";
+import PricingSection from "@/components/hero/pricing-section";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <Button>Button</Button>
+    <div className="relative w-full ">
+      <BgGradient />
+      <div className="flex flex-col">
+        <HeroSection />
+        <DemoSection />
+        <HowItWorksSection />
+        <PricingSection />
+        <CTASection />
+      </div>
     </div>
   );
 }
